@@ -1,0 +1,89 @@
+%% 唯一需要修改的地方是 \photo[64pt]{face} 把face换成自己的照片名
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm} 
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{XXX}
+\familyname{XX}
+\title{Resume }               % optional, remove the line if not wanted
+\address{ICT, Haidian district, Beijing,China}{}   % optional, remove the line if not wanted
+\mobile{(+086)155XXXXXXXX} {}                   % optional, remove the line if not wanted
+%\phone{010-62286960}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ustc.sosohu@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{Already recommended for admission to be a postgraduate} % optional, remove the line if not wanted name of the picture file; optional, remove the line if not wanted
+%\quote{Job intention: Intern}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{2013.9--Now}{Master}{Institute of Computing Technology, CAS}{Beijing}{}
+{\textbf{Main Course: }   Computer Architecture, Cloud Computing, Information Retrieval, TCP/IP Protocol and etc.\\}  % arguments 3 to 6 are optional
+
+\cventry{2009.9--2013.6}{Bachelor}{University of Science and Technology of China}{Hefei}{\textit{GPA: 3.56/4.3}}{\textbf{Main Course: }  Data Structures, Introduction to Algorithms, Operating Systems, Computer Networks, Databases, Compiler Theory and etc.}  % arguments 3 to 6 are optional
+
+
+\section{Experience}
+\subsection{Internship Experience}
+\cventry{2014.1--2014.7}{Intel}{}{Beijing}{}
+{Nearly six months internship at the Intel Corporation (Soft Service Group), my main tasks are optimization of high performance parallel application on Intel Xeon Phi many-core platform  and analysis of open source MapReduce framework (phoenix++). These tasks make me skillfully use the programming optimization tools on Intel platform, familiar with the various methods of high performance optimization and get a better understanding of Mapreduce.\\}% arguments 3 to 6 are optional
+\cventry{2013.6--2013.9}{Loongson}{}{Hefei}{}
+{In the three-month internship at the Loongson Corporation(System Soft Group), I mainly engaged in chromium browser transplant and optimization. The entire work environment is on the Loongson 3A machine. Through internship, it brings me practical exercises of program performance analysis and the ability to query and solve the bottleneck.\\}% arguments 3 to 6 are optional
+\subsection{Project Experience}
+\cventry{2013.1--2013.5}{SVD parallelization and optimization}{}{}{}
+{On the quad-core MIPS architecture machine platform, make a general double precision floating matrix's singular value decomposition parallelization with an ideal speedup. In addition, make some ingenious improvements to the most classic sided Jacobi SVD algorithm to enhance the efficiency of the algorithm.\\}                % arguments 3 to 6 are optional
+\cventry{2012.3--2012.5}{C0(C language subset) compiler}{}{}{}
+{My simple compiler is based on flex , bisson and my own definition of C0 language grammar. The main parts of the compiler are constructing C0 language AST tree,  generating intermediate code, and then converted into assembly code interpreter.}                % arguments 3 to 6 are optional
+
+
+
+\section{Computer skills}
+\cvline{Unix/Linux:}{Familiar with Unix/Linux development environment, familiar with shell, awk scripting tool}
+\cvline{Programming:}{Familiar with C/C++}
+\cvline{HPC:}{Familiar with OpenMp, MPI parallel programming}
+\cvline{Other:}{Familiar with hadoop, basic knowledge of distributed computing}
+
+\section{Awards}
+\cvline{2012.9}{ 8211 special scholarship of School of Computer Science, USTC}
+\cvline{2011.10}{ The Third Place of Robogame(top 5\%), USTC}
+\cvline{2009--2011}{ Outstanding Student Scholarship, USTC}
+
+\section{Languages}
+\cvlanguage{English}{CET6}{}
+
+\section{Interests}
+\cvline{Sports}{ Football, basketball}
+\cvline{Reading}{ Computer classic books}
+\cvline{Tour}{ Like to travel around to relax myself}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

@@ -1,0 +1,89 @@
+%% 唯一需要修改的地方是 \photo[64pt]{face} 把face换成自己的照片名
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage[noindent]{ctex}
+\setlength{\hintscolumnwidth}{2.5cm}    % 设置日期栏宽度
+
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths }                     % required when changes are made to page layout lengths
+% personal data
+\firstname{胡XX}
+\familyname{}
+\title{简历}               % optional, remove the line if not wanted
+\address{北京市海淀区中科院计算所}{}   % optional, remove the line if not wanted
+\mobile{(+086)155XXXXXXXX} {}                   % optional, remove the line if not wanted
+%\homepage{www.phodal.com}                  % 可选项、如不需要可删除本行 
+%\photo[64pt][0.2pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\phone{010-62286960}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ustc.sosohu@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{Already recommended for admission to be a postgraduate} % optional, remove the line if not wanted name of the picture file; optional, remove the line if not wanted
+%\quote{Job intention: Intern}                 % optional, remove the line if not wanted
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+
+\cventry{2013.9--现在}{硕士}{中科院计算所}{}{}
+{\textbf{主要课程: }   计算机体系结构, 云计算, 信息检索, TCP/IP 协议等}  % arguments 3 to 6 are optional
+
+\cventry{2009.9--2013.6}{本科}{中国科学技术大学}{\quad}{GPA: 3.56/4.3,\quad  RANK: 17/106}
+{\textbf{主要课程: }  数据结构, 算法导论, 操作系统, 计算机网络, 数据库, 编译原理等}  % arguments 3 to 6 are optional
+
+
+\section{相关经历}
+\subsection{实习经历}
+\cventry{2014.1--2014.7}{Intel公司}{}{北京}{}
+{在Intel公司SSG部门实习半年，主要从事 Intel Xeon Phi众核平台上的高性能并行应用程序性能优化和分析开源MapReduce架构(phoenix++)，熟练了使用Intel平台上程序优化相关工具，熟悉了高性能优化的各种手段，加深对Mapreduce架构的理解\\}% arguments 3 to 6 are optional
+\cventry{2013.6--2013.9}{中科龙芯公司}{}{合肥}{}
+{在中科龙芯系统软件部门实习三个月，主要从事chromium浏览器的移植和优化的工作，整个工作环境都是在龙芯3A机器上进行，通过实习，锻炼了程序性能分析、查询性能瓶颈和解决瓶颈的能力\\}% arguments 3 to 6 are optional
+\subsection{项目经历}
+\cventry{2013.1--2013.5}{矩阵SVD算法的并行与优化}{}{}{}
+{在四核的MIPS架构机器平台上，实现了双精度浮点类型的一般矩阵奇异值分解的并行化，得到了比较理想的加速比，并对最经典的SVD单边Jacobi分解算法作出一些独创性的改进，提高了算法的效率\\}                % arguments 3 to 6 are optional
+\cventry{2012.3--2012.5}{C0语言(C语言子集)编译器实现}{}{}{}
+{使用flex+bisson的组合，配合自己定义的C0语言文法，建造C0语言AST树，然后产生中间代码，再被解释器转化为汇编代码，最终形成简易编译器\\}                % arguments 3 to 6 are optional
+
+\section{计算机技能}
+\cvline{Unix/Linux:}{熟悉Unix/Linux环境开发，熟悉shell、awk等脚本工具}
+\cvline{编程语言:}{熟悉C/C++编程}
+\cvline{高性能计算:}{熟悉OpenMP, MPI并行编程}
+\cvline{其他:}{熟悉hadoop,分布式计算的基本知识}
+
+\section{获得奖项}
+\cvline{2012.9}{中国科大计算机学院8211专项奖学金}
+\cvline{2011.10}{中国科大RoboGame机器人大赛季军(top 5\%)}
+\cvline{2009--2011}{中国科大优秀学生奖学金铜奖}
+
+\section{语言能力}
+\cvlanguage{英语}{CET6}{}
+
+\section{兴趣爱好}
+\cvline{运动}{ 足球，篮球}
+\cvline{读书}{ 计算机经典书籍，各大圣经}
+\cvline{旅游}{ 到处旅游，放松身心}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
